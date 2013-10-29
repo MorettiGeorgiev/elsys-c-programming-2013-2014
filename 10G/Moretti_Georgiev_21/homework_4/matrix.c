@@ -1,12 +1,13 @@
 #include <stdio.h>
 int main(){
-        int n,i,j,sum=0;
+        int n,i,j;
+        float sum=0;
         scanf("%d",&n);
-        int arr[n][n];
+        float arr[n][n];
 		if(n<=100 && n>0){
         for(i=0;i<n;i++){
 			for(j=0;j<n;j++){
-				scanf("%d", &arr[i][j]);
+				scanf("%f", &arr[i][j]);
             }
         }       
         for(i=0;i<n;i++){
@@ -15,7 +16,7 @@ int main(){
 					sum += arr[i][j];
             }
         }
-       printf("%d\n", sum);
+       printf("%f\n", sum);
 	}
 	else{
 		printf("error");
